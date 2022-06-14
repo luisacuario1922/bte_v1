@@ -24,4 +24,9 @@ public class EndpointRol {
     public Integer registrarUsuario(@RequestBody RolDto materia){
         return this.servicio.registrarRol(materia);
     }
+
+    @DeleteMapping("/eliminar/{id}")
+    public Integer eliminarRol(@PathVariable Integer id){
+        return this.servicio.eliminarRol(id);
+    }
 }

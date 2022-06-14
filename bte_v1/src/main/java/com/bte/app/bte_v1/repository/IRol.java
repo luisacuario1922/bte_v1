@@ -19,5 +19,5 @@ public interface IRol extends JpaRepository<Rol, Integer> {
             @Param("name")String nombre);
 
     @Query(value = "{ call SP_Rol_DE (:id) }",nativeQuery = true)
-    List<Rol> eliminarRol(@Param("id")Integer id);
+    Integer eliminarRol(@Param("id")Integer id);
 }

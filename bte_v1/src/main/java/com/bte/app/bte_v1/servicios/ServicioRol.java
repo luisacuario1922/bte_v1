@@ -24,7 +24,7 @@ public class ServicioRol {
         return this.db.registrarRol(
                 rol.getNombre());
     }
-    public void eliminarRol(Integer id){
-
+    public Integer eliminarRol(Integer id){
+        return db.eliminarRol(id);
     }
 }
