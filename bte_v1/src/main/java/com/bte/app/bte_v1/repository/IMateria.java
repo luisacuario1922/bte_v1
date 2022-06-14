@@ -23,5 +23,5 @@ public interface IMateria extends JpaRepository<Materia, Integer> {
             @Param("hp")Integer hp);
 
     @Query(value = "{ call SP_Materia_DE (:id) }",nativeQuery = true)
-    List<Materia> eliminarMateria(@Param("id")Integer id);
+    Integer eliminarMateria(@Param("id")Integer id);
 }

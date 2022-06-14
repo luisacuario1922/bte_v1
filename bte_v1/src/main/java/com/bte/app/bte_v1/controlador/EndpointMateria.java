@@ -25,4 +25,8 @@ public class EndpointMateria {
     public Integer registrarUsuario(@RequestBody MateriaDto materia){
         return this.servicio.registrarMateria(materia);
     }
+    @DeleteMapping("/eliminar/{id}")
+    public Integer eliminarMateria(@PathVariable Integer id){
+        return this.servicio.eliminarMateria(id);
+    }
 }

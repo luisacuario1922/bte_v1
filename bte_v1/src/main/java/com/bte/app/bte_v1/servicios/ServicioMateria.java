@@ -28,7 +28,7 @@ public class ServicioMateria {
                 materia.getHT(),
                 materia.getHP());
     }
-    public void eliminarMateria(Integer id){
-
+    public Integer eliminarMateria(Integer id){
+        return db.eliminarMateria(id);
     }
 }
