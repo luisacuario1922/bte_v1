@@ -21,5 +21,5 @@ public interface IUnidad extends JpaRepository<Unidad, Integer> {
             @Param("num")Integer num);
 
     @Query(value = "{ call SP_Unidad_DE (:id) }",nativeQuery = true)
-    List<Unidad> eliminarUnidad(@Param("id")Integer id);
+    Integer eliminarUnidad(@Param("id")Integer id);
 }

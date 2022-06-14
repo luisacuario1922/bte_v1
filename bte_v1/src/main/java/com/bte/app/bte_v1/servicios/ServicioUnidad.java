@@ -28,7 +28,7 @@ public class ServicioUnidad {
                 unidad.getNombre(),
                 unidad.getNumero());
     }
-    public void eliminarUnidad(Integer id){
-
+    public Integer eliminarUnidad(Integer id){
+        return db.eliminarUnidad(id);
     }
 }

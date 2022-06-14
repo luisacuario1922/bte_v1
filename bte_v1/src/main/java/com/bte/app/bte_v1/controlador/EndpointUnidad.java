@@ -27,4 +27,9 @@ public class EndpointUnidad {
     public Integer registrarUnidad(@RequestBody UnidadDto unidad){
         return this.servicio.registrarUnidad(unidad);
     }
+
+    @DeleteMapping("/eliminar/{id}")
+    public Integer eliminarUnidad(@PathVariable Integer id){
+        return this.servicio.eliminarUnidad(id);
+    }
 }
