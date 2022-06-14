@@ -19,5 +19,5 @@ public interface ISemestre extends JpaRepository<Semestre, Integer> {
             @Param("name")String nombre);
 
     @Query(value = "{ call SP_Semestre_DE (:id) }",nativeQuery = true)
-    List<Semestre> eliminarSemstre(@Param("id")Integer id);
+    Integer eliminarSemestre(@Param("id")Integer id);
 }

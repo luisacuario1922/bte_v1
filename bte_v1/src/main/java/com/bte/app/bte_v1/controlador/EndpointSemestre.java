@@ -27,4 +27,9 @@ public class EndpointSemestre {
     public Integer registrarUsuario(@RequestBody SemestreDto semestre){
         return this.servicio.registrarSemestre(semestre);
     }
+
+    @DeleteMapping("/eliminar/{id}")
+    public Integer eliminarSemestre(@PathVariable Integer id){
+        return this.servicio.eliminarSemestre(id);
+    }
 }

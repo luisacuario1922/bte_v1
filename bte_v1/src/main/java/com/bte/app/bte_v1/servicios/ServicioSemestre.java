@@ -26,7 +26,7 @@ public class ServicioSemestre {
         return this.db.registrarSemestre(
                 semestre.getNombre());
     }
-    public void eliminarSemestre(Integer id){
-
+    public Integer eliminarSemestre(Integer id){
+        return db.eliminarSemestre(id);
     }
 }
