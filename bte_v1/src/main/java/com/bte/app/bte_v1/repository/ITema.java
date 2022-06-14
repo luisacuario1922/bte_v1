@@ -22,5 +22,5 @@ public interface ITema extends JpaRepository<Tema, Integer> {
             @Param("contenido")String contenido);
 
     @Query(value = "{ call SP_Tema_DE (:id) }",nativeQuery = true)
-    List<Tema> eliminarTema(@Param("id")Integer id);
+    Integer eliminarTema(@Param("id")Integer id);
 }

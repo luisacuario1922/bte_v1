@@ -27,4 +27,10 @@ public class EndpointTema {
     public Integer registrarTema(@RequestBody TemaDto tema){
         return this.servicio.registrarTema(tema);
     }
+
+    @DeleteMapping("/eliminar/{id}")
+    public Integer eliminarTema(@PathVariable Integer id){
+        return this.servicio.eliminarTema(id);
+    }
 }
+

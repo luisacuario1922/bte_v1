@@ -28,7 +28,7 @@ public class ServicioTema {
                 carrera.getContenido()
                 );
     }
-    public void eliminarUsuario(Integer id){
-
+    public Integer eliminarTema(Integer id){
+        return db.eliminarTema(id);
     }
 }
